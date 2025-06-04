@@ -32,7 +32,7 @@ public class ConditionsExample {
         }
 
 
-        int day = 4;
+        int day = 2;
         switch (day) {
             case 1:
                 System.out.println("Monday");
