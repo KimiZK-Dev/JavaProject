@@ -7,7 +7,6 @@ public class Lesson2 {
 
         for (int i = (text.length()-1); i >= 0 ; i--){
             check += text.charAt(i);
-            // System.out.println(check);
         }
 
         System.out.println(check);
