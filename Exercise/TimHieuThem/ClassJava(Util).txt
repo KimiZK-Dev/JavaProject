@@ -1,0 +1,37 @@
+| Class               | Công dụng chính                                                                       |
+| ------------------- | ------------------------------------------------------------------------------------- |
+| Scanner             | Nhập dữ liệu từ bàn phím, file, chuỗi (ví dụ: Scanner sc = new Scanner(System.in))    |
+| ArrayList<E>        | Danh sách mảng động, kích thước thay đổi được                                         |
+| LinkedList<E>       | Danh sách liên kết đôi, dễ thêm/xoá phần tử ở đầu/cuối                                |
+| HashMap<K, V>       | Lưu trữ theo cặp key–value, tra cứu nhanh theo khóa                                   |
+| TreeMap<K, V>       | Map có thứ tự tăng dần theo key                                                       |
+| HashSet<E>          | Tập hợp các phần tử không trùng lặp, không theo thứ tự                                |
+| TreeSet<E>          | Set có thứ tự tăng dần                                                                |
+| Collections         | Class tiện ích chứa các hàm tĩnh hỗ trợ List, Set, Map (sort, shuffle, min, max...)   |
+| Arrays              | Class tiện ích để xử lý mảng (convert, sort, toString, copy, fill,...)                |
+| Date                | Đại diện cho ngày và giờ (cũ, đã được thay thế bởi java.time)                         |
+| Calendar            | Làm việc với ngày giờ nâng cao hơn Date (cũng cũ, thay bằng java.time)                |
+| Random              | Tạo số ngẫu nhiên                                                                     |
+| StringTokenizer     | Cắt chuỗi thành token theo dấu phân cách (cũ, nên dùng split() hoặc Scanner)          |
+| Timer / TimerTask   | Thực thi tác vụ theo lịch hoặc lặp lại theo thời gian định kỳ                         |
+| Optional<T>         | Tránh lỗi NullPointerException, xử lý giá trị có thể null                             |
+| Properties          | Lưu và đọc cấu hình dạng key-value, dùng nhiều trong file .properties                 |
+| Stack<E>            | Cấu trúc dữ liệu ngăn xếp (Last In – First Out)                                       |
+| Queue<E>            | Hàng đợi (First In – First Out)                                                       |
+| PriorityQueue<E>    | Hàng đợi ưu tiên (ưu tiên phần tử nhỏ nhất theo thứ tự tự nhiên hoặc comparator)      |
+| Deque<E>            | Hàng đợi hai đầu – có thể thêm/xóa cả hai phía                                        |
+| UUID                | Tạo mã định danh duy nhất (UUID – Universally Unique Identifier)                      |
+| BitSet              | Đại diện tập hợp các bit (0/1), tiết kiệm bộ nhớ nếu lưu trữ boolean hàng loạ         |
+| Comparator<T>       | Interface dùng để so sánh và sắp xếp tùy chỉnh                                        |
+
+
+| Tình huống                  | Gợi ý dùng class nào                  |
+| --------------------------- | ------------------------------------- |
+| Nhập từ bàn phím            | Scanner                               |
+| Lưu danh sách người dùng    | ArrayList, LinkedList                 |
+| Lưu dữ liệu không trùng lặp | HashSet, TreeSet                      |
+| Tra cứu nhanh theo mã số    | HashMap                               |
+| Sắp xếp danh sách           | Collections.sort(), Arrays.sort()     |
+| Sinh số ngẫu nhiên          | Random                                |
+| Tạo ID duy nhất             | UUID.randomUUID()                     |
+| Quản lý cấu hình app        | Properties                            |

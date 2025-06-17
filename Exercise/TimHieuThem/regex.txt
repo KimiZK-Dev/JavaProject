@@ -1,0 +1,26 @@
+| Ký tự / Cụm Regex   | Công dụng                                                               |                       |
+| ------------------- | ----------------------------------------------------------------------- | --------------------- |
+| .                   | Đại diện cho bất kỳ ký tự nào , trừ \n                                  |                       |
+| ^                   | Khớp với đầu dòng                                                       |                       |
+| $                   | Khớp với cuối dòng                                                      |                       |
+| *                   | Lặp 0 hoặc nhiều lần ký tự trước đó                                     |                       |
+| +                   | Lặp 1 hoặc nhiều lần ký tự trước đó                                     |                       |
+| ?                   | Lặp 0 hoặc 1 lần ký tự trước đó (cũng dùng để tạo non-greedy match)     |                       |
+| {n}                 | Lặp đúng n lần                                                          |                       |
+| {n,}                | Lặp ít nhất n lần                                                       |                       |
+| {n,m}               | Lặp từ n đến m lần                                                      |                       |
+| [...]               | Khớp với bất kỳ ký tự nào trong dấu ngoặc                               |                       |
+| [^...]              | Khớp với bất kỳ ký tự nào KHÔNG nằm trong dấu ngoặc                     |                       |
+| \                   | \                                                                       |   Toán tử OR (hoặc)   |
+| ()                  | Nhóm biểu thức (có thể dùng để lưu trữ và tham chiếu lại)               |                       |
+| \                   | Ký tự thoát (escape)                                                    |                       |
+| \d                  | Ký tự số (0-9)                                                          |                       |
+| \D                  | Không phải số                                                           |                       |
+| \w                  | Ký tự chữ cái, chữ số hoặc dấu gạch dưới (a-z, A-Z, 0-9, \_)            |                       |
+| \W                  | Không phải là \w                                                        |                       |
+| \s                  | Ký tự khoảng trắng (space, tab, newline,...)                            |                       |
+| \S                  | Không phải ký tự khoảng trắng                                           |                       |
+| (?=...)             | Positive Lookahead – khớp nếu phía sau đúng với ...                     |                       |
+| (?!...)             | Negative Lookahead – khớp nếu phía sau không là ...                     |                       |
+| (?<=...)            | Positive Lookbehind – khớp nếu phía trước là ...                        |                       |
+| (?<!...)            | Negative Lookbehind – khớp nếu phía trước không là ...                  |                       |
