@@ -1,0 +1,94 @@
+📁 **1. Lệnh thao tác thư mục & tệp**
+
+| Lệnh CMD / PS        | Công dụng                                                  |
+| -------------------- | ---------------------------------------------------------- |
+| `dir`                | Liệt kê file và thư mục trong thư mục hiện tại             |
+| `cd <thư_mục>`       | Di chuyển đến thư mục                                      |
+| `cd ..`              | Quay lại thư mục cha                                       |
+| `mkdir <tên>`        | Tạo thư mục mới (`md` là alias tương tự)                   |
+| `rmdir <tên>`        | Xoá thư mục (nếu rỗng)                                     |
+| `del <file>`         | Xoá file                                                   |
+| `copy <src> <dst>`   | Sao chép file                                              |
+| `move <src> <dst>`   | Di chuyển file                                             |
+| `rename <old> <new>` | Đổi tên file hoặc thư mục                                  |
+| `tree`               | Hiển thị cấu trúc thư mục theo dạng cây                    |
+| `attrib`             | Hiển thị hoặc thay đổi thuộc tính file (ẩn, chỉ đọc, v.v.) |
+
+
+
+🧾 **2. Lệnh đọc & ghi nội dung**
+
+| Lệnh                 | Công dụng                                                  |
+| -------------------- | ---------------------------------------------------------- |
+| `type <file>`        | Hiển thị nội dung file (CMD)                               |
+| `Get-Content <file>` | Hiển thị nội dung file (PowerShell, alias: `cat`, `gc`)    |
+| `echo Hello > file`  | Ghi nội dung vào file (ghi đè)                             |
+| `echo Hello >> file` | Ghi thêm nội dung vào file (ghi tiếp)                      |
+| `more <file>`        | Hiển thị nội dung file theo từng trang (dùng khi file dài) |
+
+
+
+🔧 **3. Hệ thống & môi trường**
+
+| Lệnh             | Công dụng                             |
+| ---------------- | ------------------------------------- |
+| `cls`            | Xoá màn hình console                  |
+| `exit`           | Thoát CMD hoặc PowerShell             |
+| `set`            | Xem hoặc tạo biến môi trường (CMD)    |
+| `$env:<var>`     | Truy cập biến môi trường (PowerShell) |
+| `echo %PATH%`    | Hiển thị biến môi trường PATH (CMD)   |
+| `echo $env:PATH` | Hiển thị biến PATH (PowerShell)       |
+| `hostname`       | Hiển thị tên máy tính                 |
+| `systeminfo`     | Hiển thị thông tin hệ thống chi tiết  |
+| `ver`            | Hiển thị phiên bản hệ điều hành       |
+| `time` / `date`  | Xem hoặc đặt thời gian, ngày          |
+
+
+
+🌐 **4. Mạng và kết nối**
+
+| Lệnh              | Công dụng                                  |
+| ----------------- | ------------------------------------------ |
+| `ipconfig`        | Xem thông tin mạng                         |
+| `ping <host>`     | Kiểm tra kết nối đến host                  |
+| `tracert <host>`  | Theo dõi đường đi của gói dữ liệu đến host |
+| `netstat`         | Xem kết nối mạng hiện tại, cổng đang dùng  |
+| `nslookup <host>` | Tra cứu DNS                                |
+
+
+
+🧠 **5. Tiến trình & tài nguyên**
+
+| Lệnh                 | Công dụng                                   |
+| -------------------- | ------------------------------------------- |
+| `tasklist`           | Liệt kê tiến trình đang chạy                |
+| `taskkill /PID <id>` | Kết thúc tiến trình theo PID                |
+| `start <app>`        | Mở ứng dụng từ CMD/PS (vd: `start notepad`) |
+| `shutdown /s /t 0`   | Tắt máy ngay lập tức                        |
+| `shutdown /r /t 0`   | Khởi động lại máy                           |
+
+
+
+🧪 **6. PowerShell đặc biệt**
+
+| Lệnh / Alias              | Công dụng                                          |
+| ------------------------- | -------------------------------------------------- |
+| `ls`, `gci`               | Liệt kê file (alias cho `Get-ChildItem`)           |
+| `pwd`                     | Hiển thị đường dẫn hiện tại (`Get-Location`)       |
+| `clear`, `cls`            | Xoá màn hình console (`Clear-Host`)                |
+| `where.exe <cmd>`         | Tìm đường dẫn thực thi của 1 lệnh                  |
+| `Measure-Command { ... }` | Đo thời gian chạy của khối lệnh                    |
+| `Out-File`, `Set-Content` | Ghi nội dung vào file (tùy chọn mã hóa, định dạng) |
+
+
+
+🧰 **7. Lệnh khác hữu ích**
+
+| Lệnh           | Công dụng                                               |         |
+| -------------- | ------------------------------------------------------- | ------- |
+| `help`         | Hiển thị danh sách lệnh có thể dùng (hoặc `help <cmd>`) |         |
+| `<cmd> /?`     | Hiển thị hướng dẫn chi tiết cho lệnh (ví dụ: `dir /?`)  |         |
+| `assoc`        | Hiển thị hoặc thay đổi liên kết đuôi file với ứng dụng  |         |
+| `fc <f1> <f2>` | So sánh nội dung 2 file                                 |         |
+| `clip`         | Ghi nội dung vào clipboard (ví dụ: \`dir                | clip\`) |
+
