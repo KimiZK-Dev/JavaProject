@@ -89,8 +89,6 @@ VD:
 javac HelloWorld.java
 ```
 
-Dưới đây là phần **đã chỉnh sửa lại nội dung "Cách chạy chương trình"** theo yêu cầu của bạn, sẵn sàng để chèn vào `README.md`:
-
 ---
 
 ### ⚙️ Cách chạy chương trình
